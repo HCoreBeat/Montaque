@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Meta para Control de Cache -->
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <!-- Meta Palabras Clave -->
+    <meta name="keywords" content="Montaque, Online Shop, Las Tunas, Cuba, Productos, Calidad, Conectar, Familias">
+    <!-- Meta Autor -->
+    <meta name="author" content="Montaque Shops">
+      <!-- Favicon -->
+    <link rel="icon" href="Images/logo_2.png" type="image/x-icon">
+    <title>Montaque - Tienda</title>
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <base href="./">
+</head>
+<body>
+    <!-- Overlay para el sidebar -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Overlay para el carrito -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    
+    <!-- Menú lateral para móvil -->
+    <aside class="sidebar" id="sidebar">
+        <button class="close-sidebar" id="close-sidebar">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <div class="sidebar-header">
+            <h3>Filtros</h3>
+        </div>
+        
+        <div class="sidebar-section">
+            <h4 class="sidebar-title">Categorías</h4>
+            <ul class="sidebar-categories" id="sidebar-categories">
+                <!-- Las categorías se llenarán dinámicamente -->
+            </ul>
+        </div>
+        
+        <div class="sidebar-section">
+            <h4 class="sidebar-title">Rango de Precios</h4>
+            <div class="price-filter">
+                <div class="price-inputs">
+                    <div class="price-input-group">
+                        <label for="min-price">Mínimo</label>
+                        <input type="number" id="min-price" placeholder="$ 0" min="0">
+                    </div>
+                    <div class="price-input-group">
+                        <label for="max-price">Máximo</label>
+                        <input type="number" id="max-price" placeholder="$ Max" min="0">
+                    </div>
+                </div>
+                <div class="price-slider">
+                    <div class="price-slider-track"></div>
+                    <input type="range" id="price-slider-min" class="price-range" min="0" max="1000" value="0">
+                    <input type="range" id="price-slider-max" class="price-range" min="0" max="1000" value="1000">
+                </div>
+                <button class="apply-filter-btn" id="apply-price-filter">
+                    <i class="fas fa-filter"></i> Aplicar Filtros
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <header class="header">
+        <div class="header-top">
+            <!-- Menú hamburguesa solo en móvil -->
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Logo -->
+            <!-- Logo como imagen -->
+            <div class="logo-container" onclick="goToHome()">
+                <img src="Images/logo.png" alt="Montaque Logo" class="logo-img">
+            </div>
+            
+            <!-- Barra de búsqueda -->
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Busca Montaque.." oninput="searchProducts()">
+                <button class="search-btn" onclick="searchProducts()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            <!-- Carrito -->
+            <button class="cart-btn" onclick="toggleCart()">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </button>
+        </div>
+        
+        <!-- Categorías (solo en desktop) -->
+        <nav class="categories-nav">
+            <ul class="categories-list" id="categories-list">
+                <!-- Las categorías se llenarán dinámicamente -->
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <div class="products-grid" id="products-container"></div>
+        <div class="product-detail" id="product-detail" style="display: none;"></div>
+    </main>
+
+    <div class="cart-sidebar" id="cart">
+        <div class="cart-header">
+            <h2><i class="fas fa-shopping-cart"></i> Tu Carrito</h2>
+            <button class="close-btn" onclick="toggleCart()">×</button>
+        </div>
+        <div class="cart-content">
+            <div class="cart-items" id="cart-items"></div>
+            <div class="empty-cart-panel" id="empty-cart-panel">
+                <i class="fas fa-shopping-basket"></i>
+                <h3>Tu carrito está vacío</h3>
+                <p>Explora nuestros productos y encuentra algo especial</p>
+                <button class="continue-btn" onclick="toggleCart()">Seguir comprando</button>
+            </div>
+            <div class="cart-total">
+                <p>Total: $<span id="total">0.00</span></p>
+                <button class="checkout-btn">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel de carrito vacío -->
+    <div class="empty-cart-modal" id="empty-cart-modal">
+        <div class="empty-cart-content">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>Tu carrito está vacío</h3>
+            <p>Añade productos para continuar con tu compra</p>
+            <button class="continue-shopping-btn" onclick="closeEmptyCartModal()">Seguir comprando</button>
+        </div>
+    </div>
+
+    <!-- Payment Section -->
+    <section id="payment-section" class="payment-section hidden">
+        <div class="payment-container">
+            <div class="payment-header">
+                <h2><i class="fas fa-file-invoice-dollar"></i> Finalizar Compra</h2>
+                <button class="close-btn" onclick="hidePaymentSection()">×</button>
+            </div>
+            <form id="payment-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="full-name"><i class="fas fa-user"></i> Nombre Completo</label>
+                        <input type="text" id="full-name" name="full-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone"><i class="fas fa-mobile-alt"></i> Teléfono</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address"><i class="fas fa-map-marker-alt"></i> Dirección</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                </div>
+
+                <div class="delivery-message">
+                    <p><i class="fas fa-shipping-fast"></i> Envío gratuito. Entrega en 24-48 horas.</p>
+                </div>
+
+                <h3 class="order-summary-title"><i class="fas fa-shopping-cart"></i> Resumen de tu Pedido</h3>
+                <div class="order-summary" id="order-summary">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th><i class="fas fa-box-open"></i> Producto</th>
+                          <th><i class="fas fa-hashtag"></i> Cantidad</th>
+                          <th><i class="fas fa-tag"></i> Precio Unitario</th>
+                          <th><i class="fas fa-calculator"></i> Total</th>
+                        </tr>
+                      </thead>
+                      <tbody id="summary-items">
+                        <!-- Productos se llenan dinámicamente -->
+                      </tbody>
+                    </table>
+                </div>
+                
+                <div class="order-total">
+                    <p>Total a pagar: <span id="payment-total">0.00</span></p>
+                </div>
+
+                <div class="payment-actions">
+                    <button type="submit" class="submit-btn">Confirmar Pedido</button>
+                    <button type="button" class="cancel-btn" onclick="hidePaymentSection()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-text">V1.1.2  © 2025 Montaque y afiliados H.A - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Panel de confirmación de compra -->
+    <div class="order-confirmation-modal" id="order-confirmation-modal">
+        <div class="order-confirmation-content">
+            <div class="confirmation-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>¡Pedido Confirmado!</h2>
+            <p class="confirmation-message">Gracias por tu compra. Estamos procesando tu pedido y te contactaremos pronto.</p>
+            
+            <div class="contact-info">
+                <p><i class="fas fa-phone-alt"></i> +53 5 3411131</p>
+                <p><i class="fas fa-envelope"></i> soporte.montaque@gmail.com</p>
+            </div>
+            
+            <button class="back-to-home-btn" onclick="closeConfirmationAndGoHome()">
+                <i class="fas fa-chevron-left"></i> Volver a la tienda
+            </button>
+        </div>
+    </div>
+
+    <!-- Botón flotante de WhatsApp -->
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <img src="Images/whatsapp.svg" alt="Contactar por WhatsApp" class="whatsapp-icon">
+        <span class="whatsapp-tooltip">¡Contáctanos!</span>
+    </div>
+
+    <script src="Js/afiliados.js"></script>
+    <script src="Js/script.js"></script>
+    <script src="Js/payment.js"></script>
+</body>
+</html>
