@@ -1225,5 +1225,106 @@ function openWhatsApp() {
     window.open(url, '_blank');
 }
 
+
+// carrucel de fotos
+// Carrusel Automático Mejorado
+let slideIndex = 0;
+let slideInterval;
+const slides = document.querySelectorAll('.carousel-slide');
+const dots = document.querySelectorAll('.dot');
+const track = document.querySelector('.carousel-track');
+const totalSlides = slides.length;
+
+// Inicializa el carrusel
+function initCarousel() {
+    updateCarousel();
+    startAutoSlide();
+    
+    // Pausar al hacer hover
+    const carousel = document.querySelector('.hero-carousel');
+    carousel.addEventListener('mouseenter', pauseAutoSlide);
+    carousel.addEventListener('mouseleave', startAutoSlide);
+    
+    // Touch events para móviles
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    track.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        pauseAutoSlide();
+    }, {passive: true});
+    
+    track.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        startAutoSlide();
+    }, {passive: true});
+}
+
+function handleSwipe() {
+    const threshold = 50;
+    if (touchEndX < touchStartX - threshold) {
+        moveSlide(1); // Swipe izquierda
+    } else if (touchEndX > touchStartX + threshold) {
+        moveSlide(-1); // Swipe derecha
+    }
+}
+
+function updateCarousel() {
+    // Mueve el track
+    track.style.transform = `translateX(-${slideIndex * 100}%)`;
+    
+    // Actualiza los dots
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === slideIndex);
+    });
+    
+    // Reinicia la animación del caption
+    const captions = document.querySelectorAll('.carousel-caption');
+    captions.forEach(caption => {
+        caption.style.animation = 'none';
+        void caption.offsetWidth; // Trigger reflow
+        caption.style.animation = 'captionSlideIn 0.8s cubic-bezier(0.215, 0.610, 0.355, 1) forwards';
+    });
+}
+
+function moveSlide(n) {
+    slideIndex += n;
+    
+    if (slideIndex >= totalSlides) {
+        slideIndex = 0;
+    } else if (slideIndex < 0) {
+        slideIndex = totalSlides - 1;
+    }
+    
+    updateCarousel();
+    resetAutoSlide();
+}
+
+function currentSlide(n) {
+    slideIndex = n - 1;
+    updateCarousel();
+    resetAutoSlide();
+}
+
+function startAutoSlide() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(() => {
+        moveSlide(1);
+    }, 5000);
+}
+
+function pauseAutoSlide() {
+    clearInterval(slideInterval);
+}
+
+function resetAutoSlide() {
+    pauseAutoSlide();
+    startAutoSlide();
+}
+
+// Inicia el carrusel cuando la página carga
+document.addEventListener('DOMContentLoaded', initCarousel);
+
 // Inicialización
 document.addEventListener('DOMContentLoaded', loadProducts);
