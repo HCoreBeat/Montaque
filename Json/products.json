@@ -1,0 +1,745 @@
+{
+  "products": [
+    {
+      "nombre": "Aceite de Soya",
+      "categoria": "Despensa",
+      "precio": 3.95,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "aceite_de_soya.jpg"
+      ],
+      "descripcion": "Aceite de Soya de 900 ml, ideal para cocinar, freír y aderezar tus platillos. Un aceite versátil y saludable para tu cocina diaria. Contenido: 900 ml.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Arroz brasileño",
+      "categoria": "Despensa",
+      "precio": 3.50,
+      "descuento": 20.00,
+      "mas_vendido": true,
+      "nuevo": false,
+      "oferta": true,
+      "imagenes": [
+        "arroz_brasileño.jpg"
+      ],
+      "descripcion": "Arroz blanco brasileño de la marca Rainha, conocido por su excelente calidad y grano suelto. Perfecto como acompañamiento para cualquier platillo. Un básico en tu despensa. Contenido: 1 kg. Precio original: 3.50 USD. Precio de oferta: 2.80 USD.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Café Bryderk",
+      "categoria": "Bebidas",
+      "precio": 5.90,
+      "descuento": 13.56,
+      "mas_vendido": true,
+      "nuevo": false,
+      "oferta": true,
+      "imagenes": [
+        "cafe_bryderk.jpg"
+      ],
+      "descripcion": "Café Bryderk, café español de alta calidad con tueste natural 100% molido, 'El café para el gusto latino'. Disfruta de un aroma y sabor intensos en cada taza. Contenido: 250 g (8.81 oz). Precio original: 5.90 USD. Precio de oferta: 5.10 USD.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Carne de obejo",
+      "categoria": "Carnes",
+      "precio": 20.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "carne_de_obejo.jpg"
+      ],
+      "descripcion": "Tierna y sabrosa carne de obejo, ideal para guisos, asados lentos o barbacoas. Su sabor distintivo enriquecerá cualquier platillo. Un producto de calidad para tus mejores preparaciones. Peso: 10 lb (aproximadamente 4.54 kg).",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Ensalada fria",
+      "categoria": "Snacks",
+      "precio": 13.50,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "ensalada_fria.jpg"
+      ],
+      "descripcion": "Refrescante ensalada fría, preparada con una deliciosa combinación de ingredientes y una salsa cremosa. Ideal como guarnición o plato principal ligero. Lista para servir y disfrutar. Contenido: 4 litros.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Espagueti",
+      "categoria": "Despensa",
+      "precio": 1.90,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "espagueti.jpg"
+      ],
+      "descripcion": "Pasta premium de sémola de trigo durum. Espagueti de alta calidad 'Qualità Italiana', perfecto para tus platillos de pasta favoritos. Cocción al dente y sabor excepcional. Contenido: 500 g.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Flan tres leches",
+      "categoria": "Postres",
+      "precio": 7.90,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "flan_tres_leches.jpg"
+      ],
+      "descripcion": "Exquisito flan tres leches, con una textura suave y un delicioso jarabe de caramelo. Un postre clásico y cremoso, perfecto para cualquier ocasión. Disfruta de su dulzura inigualable.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Frijoles colorado",
+      "categoria": "Despensa",
+      "precio": 2.25,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "frijoles_colorados.jpg"
+      ],
+      "descripcion": "Frijoles colorados de primera calidad, perfectos para preparar deliciosos guisos, sopas y acompañamientos. Son una excelente fuente de proteínas y fibra. Contenido: 1 lb (aproximadamente 454 g).",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Frijoles negro",
+      "categoria": "Despensa",
+      "precio": 2.10,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "frijoles_negros.jpg"
+      ],
+      "descripcion": "Frijoles negros frescos y listos para cocinar. Ideales para preparar platillos tradicionales, sopas, ensaladas o como guarnición. Ricos en nutrientes y con un sabor auténtico. Contenido: 1 lb (aproximadamente 454 g).",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Helado",
+      "categoria": "Postres",
+      "precio": 7.90,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "helado.jpg"
+      ],
+      "descripcion": "Delicioso helado en tinas de 4 litros, disponible en varios sabores. Perfecto para refrescarte y compartir en cualquier ocasión. Disfruta de la cremosidad y el auténtico sabor en cada cucharada.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Huevo",
+      "categoria": "Lácteos",
+      "precio": 13.00,
+      "descuento": 23.15,
+      "mas_vendido": true,
+      "nuevo": false,
+      "oferta": true,
+      "imagenes": [
+        "huevo.jpg"
+      ],
+      "descripcion": "Bandeja de 30 huevos blancos frescos y de alta calidad. Indispensables en tu cocina para desayunos, repostería o cualquier receta. Una fuente natural de proteínas. Precio original: 13.00 USD. Precio de oferta: 9.99 USD.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Jamón",
+      "categoria": "Carnes",
+      "precio": 3.80,
+      "descuento": 18.42,
+      "mas_vendido": true,
+      "nuevo": false,
+      "oferta": true,
+      "imagenes": [
+        "jamon.jpg"
+      ],
+      "descripcion": "Delicioso jamón en rebanadas, ideal para sándwiches, desayunos o como parte de tus platillos favoritos. Textura suave y sabor ahumado que deleitará tu paladar. Contenido: 1 lb (aproximadamente 454 g). Precio original: 3.80 USD. Precio de oferta: 3.10 USD.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Kake mediano",
+      "categoria": "Postres",
+      "precio": 28.90,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "kake_mediano.jpg"
+      ],
+      "descripcion": "Impresionante kake mediano, cubierto de merengue y con un delicioso relleno de leche condensada. Decorado con elegantes detalles en rosa y blanco. Perfecto para celebraciones de 45 a 50 personas, un verdadero deleite visual y gustativo. Ideal para cumpleaños y eventos especiales.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Kake redondo",
+      "categoria": "Postres",
+      "precio": 16.00,
+      "descuento": 6.88,
+      "mas_vendido": true,
+      "nuevo": true,
+      "oferta": true,
+      "imagenes": [
+        "kake_redondo.jpg"
+      ],
+      "descripcion": "Hermoso kake redondo cubierto de leche condensada hervida, decorado con flores y toppers de 'Happy Birthday'. Perfecto para celebrar cumpleaños, ideal para 12-16 personas. Un postre delicioso y visualmente atractivo. Precio original: 16.00 USD. Precio de oferta: 14.90 USD.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Leche condensada Zivel",
+      "categoria": "Lácteos",
+      "precio": 2.90,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "leche_condensada.jpg"
+      ],
+      "descripcion": "Leche condensada azucarada rellena Zivel, ideal para preparar postres, dulces y bebidas. Su consistencia cremosa y dulce sabor son perfectos para tus recetas favoritas. Contenido: 13.8 oz (390 g).",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Leche en polvo entera",
+      "categoria": "Lácteos",
+      "precio": 11.40,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "leche_en_polvo_entera.jpg"
+      ],
+      "descripcion": "Leche en polvo entera Macro Food al 26% MG, ideal para preparar bebidas, postres y recetas. Rinde hasta 8.5 litros por cada kilogramo. Una opción práctica y duradera para tu despensa. Contenido: 1 kg.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Lomo de cerdo",
+      "categoria": "Carnes",
+      "precio": 29.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "lomo_de_cerdo.jpg"
+      ],
+      "descripcion": "Delicioso lomo de cerdo, perfecto para asar, hornear o cortar en filetes. Un corte magro y versátil para todas tus recetas. Ideal para comidas familiares o eventos especiales. Peso: 10 lb (aproximadamente 4.54 kg).",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Macarrones",
+      "categoria": "Despensa",
+      "precio": 1.90,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "macarrones.jpg"
+      ],
+      "descripcion": "Macarrones Ada Gourmet Selection, pasta premium ideal para sopas, ensaladas de pasta o como acompañamiento. Su forma tubular los hace perfectos para retener salsas. Contenido: 500 g.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Malta bucanero",
+      "categoria": "Bebidas",
+      "precio": 23.90,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "malta_bucanero.jpg"
+      ],
+      "descripcion": "Pack de 24 unidades de Malta Bucanero, una bebida sin alcohol refrescante y nutritiva. Ideal para cualquier momento del día, con un sabor distintivo y energizante. Perfecto para compartir.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Mayonesa Celorrio",
+      "categoria": "Despensa",
+      "precio": 5.60,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "mayonesa_celorrio.jpg"
+      ],
+      "descripcion": "Mayonesa Celorrio en un práctico envase de 560 ml. Perfecta para realzar el sabor de tus sándwiches, ensaladas y otras preparaciones. Su cremosidad y sabor la hacen un condimento esencial en tu cocina.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Papel Sanitario La Excelencia",
+      "categoria": "Hogar",
+      "precio": 2.60,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "papel.jpg"
+      ],
+      "descripcion": "Papel Sanitario 'La Excelencia' de 2 capas, super suave y que 'Siempre rinde MÁS'. Un paquete conveniente con 4 rollos para el uso diario. Calidad y rendimiento garantizados para tu hogar.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Pasta de bocaditos Aldaketa",
+      "categoria": "Despensa",
+      "precio": 5.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "pasta_de_bocadito.jpg"
+      ],
+      "descripcion": "Pasta para bocaditos Aldaketa, ideal para preparar aperitivos rápidos y deliciosos. Su textura suave y sabor versátil la hacen perfecta para rellenar o acompañar. Contenido: 465 ml.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Pernil de cerdo (15lb)",
+      "categoria": "Carnes",
+      "precio": 44.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "pernil_de_cerdo_15.jpg"
+      ],
+      "descripcion": "Pernil de cerdo fresco, un corte grande y jugoso perfecto para asar o cocinar a la parrilla. Ideal para reuniones familiares o eventos especiales. Peso: 15 lb (aproximadamente 6.8 kg).",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Pernil de cerdo (20lb)",
+      "categoria": "Carnes",
+      "precio": 59.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "pernil_de_cerdo_20.jpg"
+      ],
+      "descripcion": "Magnífico pernil de cerdo, ideal para un asado espectacular en ocasiones especiales. Jugoso, tierno y lleno de sabor. Un corte grande para satisfacer a todos tus invitados. Peso: 20 lb (aproximadamente 9.07 kg).",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Pescado de mar",
+      "categoria": "Carnes",
+      "precio": 17.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "pescado_de_mar.jpg"
+      ],
+      "descripcion": "Pescado fresco de mar (Pargo), capturado para llevar el mejor sabor a tu mesa. Excelente para freír, hornear o cocinar a la parrilla. Rico en proteínas y omega-3. Contenido: 10 lb de pargo (aproximadamente 4.54 kg).",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Pizza familiar (Jamon, Chorizo, Mixta)",
+      "categoria": "Snacks",
+      "precio": 13.90,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "pizza_familiar_mixta.jpg"
+      ],
+      "descripcion": "Pizza familiar con opciones de jamón, chorizo o mixta, generosamente cubierta de queso. Perfecta para una cena rápida y deliciosa con la familia o amigos. Elige tu sabor favorito y disfruta.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Pizza familiar (Napolitana)",
+      "categoria": "Snacks",
+      "precio": 12.30,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "pizza_familiar_napolitana.jpg"
+      ],
+      "descripcion": "Deliciosa pizza familiar estilo napolitana, cubierta con una generosa capa de queso fundido. Ideal para compartir en una noche de cine o una reunión casual. Sabor auténtico y tamaño perfecto para toda la familia. Tipo: Napolitana.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Pollo Country Pride Leg Quarters",
+      "categoria": "Carnes",
+      "precio": 14.90,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pollo_country_pride.jpg"
+      ],
+      "descripcion": "Paquete de muslos y contramuslos de pollo Country Pride, 100% naturales, sin hormonas añadidas ni esteroides. Ideales para preparar cualquier tipo de comida. Paquete de 10 lb (aproximadamente 4.54 kg).",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Refresco Santa (Cola)",
+      "categoria": "Bebidas",
+      "precio": 19.90,
+      "descuento": 20.10,
+      "mas_vendido": true,
+      "nuevo": false,
+      "oferta": true,
+      "imagenes": [
+        "refresco_santa_cola.jpg"
+      ],
+      "descripcion": "Pack de 24 unidades de Refresco Santa Cola, perfecto para fiestas, eventos o para tener siempre a mano. Disfruta de su sabor refrescante y burbujeante. Un clásico que nunca falla. Contenido: 24 unidades. Precio original: 19.90 USD. Precio de oferta: 15.90 USD.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Refresco Santa (Limón)",
+      "categoria": "Bebidas",
+      "precio": 19.90,
+      "descuento": 20.10,
+      "mas_vendido": true,
+      "nuevo": false,
+      "oferta": true,
+      "imagenes": [
+        "refresco_santa_limon.jpg"
+      ],
+      "descripcion": "Pack de 24 unidades de Refresco Santa Limón & Lime, una bebida cítrica y efervescente. Ideal para refrescarte en cualquier momento del día y acompañar tus comidas. Contenido: 24 unidades. Precio original: 19.90 USD. Precio de oferta: 15.90 USD.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Refresco Santa (Naranja)",
+      "categoria": "Bebidas",
+      "precio": 19.90,
+      "descuento": 20.10,
+      "mas_vendido": true,
+      "nuevo": false,
+      "oferta": true,
+      "imagenes": [
+        "refresco_santa_orange.jpg"
+      ],
+      "descripcion": "Pack de 24 unidades de Refresco Santa Naranja, una bebida cítrica y efervescente. Ideal para refrescarte y acompañar tus comidas. Contenido: 24 unidades. Precio original: 19.90 USD. Precio de oferta: 15.90 USD.",
+      "disponibilidad": true
+    },
+
+
+
+
+
+    {
+      "nombre": "Combo 1",
+      "categoria": "Combos",
+      "tipo": "pack",
+      "productos": [
+        "x17 Libras de carne de cerdo",
+        "x6 Libras de ovejo",
+        "x2 Libras de jamón",
+        "x3 Libras de pollo",
+        "x1 Libra de Picadillo de pollo",
+        "x2 Kg de arroz importado",
+        "x2 Libras de frijoles colorado",
+        "x1 Paquete de Spaghetti de 500g",
+        "x1 Paquete de Codito de 500g",
+        "x2 Pastillas de Res 120g",
+        "x2 Sazón Goya 5g",
+        "x1 Lata de leche condensada",
+        "x4 Paquetes de refresco Frutti 2L c/u",
+        "x1 Jabón de baño 90g",
+        "x1 Paquete de detergente Multiuso de 500g",
+        "x1 Pomo de aceite 900ml"
+      ],
+      "precio": 99.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "imagenes": ["combos/pack_1.jpg"],
+      "disponibilidad": true,
+      "ahorro": 0,
+      "descripcion": "Un combo integral ideal para abastecer tu despensa con una variedad de carnes como cerdo, ovejo, jamón y pollo, complementado con arroz importado, frijoles colorados y dos tipos de pasta. Además, incluye condimentos esenciales como pastillas de res y Sazón Goya, leche condensada, refrescos, productos de higiene personal como jabón de baño y detergente multiuso, y un pomo de aceite para cocinar. ¡Todo lo que necesitas en un solo paquete!"
+    },
+    {
+      "nombre": "Combo 2",
+      "categoria": "Combos",
+      "tipo": "pack",
+      "productos": [
+        "x20 lb de carne de cerdo",
+        "x6 lb de ovejo",
+        "x10 lb de pollo",
+        "x1 file de huevo",
+        "x4 paquetes de salchichas",
+        "x3 lb de jamón",
+        "x1 lb Picadillo de pollo",
+        "x3 pomos de aceite (900 ml)",
+        "x1 café broderk",
+        "x1 Vinagre (botella sellada)",
+        "x1 Paquete de Codito (500 g)",
+        "x2 Espagueti (500 g)",
+        "x3 latas de pasta de tomate",
+        "x2 kg de arroz (importado)",
+        "x2 lb de frijoles colorados",
+        "x1 lata de leche condensada",
+        "x5 refresco Frutti (1.5 lt)",
+        "x2 Goya",
+        "x5 pastillitas de pollo",
+        "x1 Paquete de detergente (500 g)",
+        "x1 paquete de papel sanitario (4 rollos)",
+        "x1 jabón"
+      ],
+      "precio": 169.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "imagenes": ["combos/pack_2.jpg"],
+      "disponibilidad": true,
+      "ahorro": 0,
+      "descripcion": "El combo más completo, perfecto para familias grandes o para un abastecimiento a largo plazo. Contiene una extensa selección de carnes: cerdo, ovejo, pollo, salchichas y jamón, junto con filetes de huevo y picadillo de pollo. Incluye esenciales de la despensa como aceite, café, vinagre, pasta (codito y espagueti), pasta de tomate, arroz importado y frijoles colorados. También encontrarás leche condensada, refrescos Frutti, condimentos Goya y pastillas de pollo. Para el hogar, se añaden detergente, papel sanitario y jabón."
+    },
+    {
+      "nombre": "Combo de cumpleaños 1",
+      "categoria": "Combos",
+      "tipo": "pack",
+      "productos": [
+        "x1 Kake redondo cubierto con leche condensada hervida",
+        "x1 Caja de refresco (usted escoge el sabor)",
+        "x1 Tina de helado 4lt",
+        "x1 Pizza familiar (jamón, napolitana o mixta)"
+      ],
+      "precio": 56.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "imagenes": ["combos/combo_cumpleaños_1.jpg"],
+      "disponibilidad": true,
+      "ahorro": 0,
+      "descripcion": "El paquete ideal para celebrar un cumpleaños, este combo incluye un delicioso kake redondo cubierto con leche condensada hervida, una caja de refrescos a elección, una generosa tina de helado de 4 litros y una pizza familiar (disponible en sabores jamón, napolitana o mixta). ¡Todo lo necesario para una fiesta memorable!"
+    },
+    {
+      "nombre": "Combo de cumpleaños 2",
+      "categoria": "Combos",
+      "tipo": "pack",
+      "productos": [
+        "x1 Cake cuadrado con relleno de leche condensada (25 a 30 personas)",
+        "x1 Tina de helado 4lt",
+        "x12 maltas",
+        "x12 refresco (usted escoge el sabor)",
+        "x1 Ensalada fría (4lt)",
+        "x1 Pizza familiar (napolitana, jamón o mixta)",
+        "x2 lb Jamón"
+      ],
+      "precio": 85.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "imagenes": ["combos/combo_cumpleaños_2.jpg"],
+      "disponibilidad": true,
+      "ahorro": 0,
+      "descripcion": "El combo definitivo para grandes celebraciones, diseñado para 25 a 30 personas. Incluye un impresionante cake cuadrado con relleno de leche condensada, una tina de helado de 4 litros, 12 maltas, 12 refrescos a su elección, una abundante ensalada fría de 4 litros, una pizza familiar (napolitana, jamón o mixta) y 2 libras de jamón. ¡Garantiza una fiesta inolvidable y bien surtida!"
+    },
+    {
+      "nombre": "Combo estándar",
+      "categoria": "Combos",
+      "tipo": "pack",
+      "productos": [
+        "x20 Libras de carne de cerdo",
+        "x6 Libras de ovejo",
+        "x3 Libras de jamón",
+        "x3 Libras de pollo",
+        "x1 Libra de Picadillo de pollo",
+        "x2 Kg de arroz importado",
+        "x2 Libras de frijoles colorado",
+        "x1 Paquete de Spaghetti de 500g",
+        "x1 Paquete de codito de 500g",
+        "x1 Lata de Pasta de Tomate",
+        "x1 Lt de Vinagre original sellado",
+        "x3 Pastillas de Res 120g",
+        "x2 Pastillas de pollo",
+        "x2 Sazón Goya 5g",
+        "x1 Lata de leche condensada",
+        "x5 Paquetes de refresco Frutti 2L",
+        "x2 Latas de Malta",
+        "x1 Jabón de baño 90g",
+        "x1 Paquete de Papel Sanitario",
+        "x1 Paquete de detergente Multiuso de 500g",
+        "x1 Pomo de aceite 900ml"
+      ],
+      "precio": 119.90,
+      "descuento": 2.10,
+      "mas_vendido": false,
+      "nuevo": false,
+      "imagenes": ["combos/combo_estandar.jpg"],
+      "disponibilidad": true,
+      "ahorro": 2.10,
+      "descripcion": "Nuestro combo estándar ofrece una base sólida para tu hogar con una selección equilibrada de carnes (cerdo, ovejo, jamón, pollo y picadillo), arroz, frijoles y dos tipos de pasta. Además, cuenta con esenciales de cocina como pasta de tomate, vinagre, pastillas de res y pollo, Sazón Goya y leche condensada. Para tus bebidas, incluye refrescos Frutti y malta. Completan el combo productos de higiene y limpieza: jabón de baño, papel sanitario, detergente multiuso y un pomo de aceite. ¡Todo lo básico con un ahorro adicional!"
+    },
+    {
+      "nombre": "Combo express 1",
+      "categoria": "Combos",
+      "tipo": "pack",
+      "productos": [
+        "x2 Spaghetti",
+        "x1 Pasta de Tomate",
+        "x1 lb de jamón",
+        "x4 refresco 2lt",
+        "x1 lb de queso",
+        "x2 goyas"
+      ],
+      "precio": 11.50,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "imagenes": ["combos/combo_express_1.jpg"],
+      "disponibilidad": true,
+      "ahorro": 0,
+      "descripcion": "Un combo express ideal para una comida rápida y sabrosa, que incluye dos paquetes de espagueti, una lata de pasta de tomate, una libra de jamón y una libra de queso. Para acompañar, cuatro refrescos de 2 litros y dos condimentos Goya para realzar el sabor. ¡Conveniencia y sabor en un solo paquete!"
+    },
+    {
+      "nombre": "Combo express 2",
+      "categoria": "Combos",
+      "tipo": "pack",
+      "productos": [
+        "x4.4 lb de pollo",
+        "x1 Lata de pasta de tomate",
+        "x1 kg de arroz (importado)",
+        "x2 goyas",
+        "x1 pomo aceite (900 ml)"
+      ],
+      "precio": 16.50,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "imagenes": ["combos/combo_express_2.jpg"],
+      "disponibilidad": true,
+      "ahorro": 0,
+      "descripcion": "Este combo express es perfecto para una comida básica y nutritiva. Contiene 4.4 libras de pollo, una lata de pasta de tomate, un kilogramo de arroz importado y un pomo de aceite de 900 ml, elementos esenciales para cualquier plato. Además, incluye dos condimentos Goya para añadir el toque final de sabor a tus preparaciones."
+    },
+    {
+      "nombre": "Combo express 3",
+      "categoria": "Combos",
+      "tipo": "pack",
+      "productos": [
+        "x1 Bolsa leche 1kg",
+        "x1 Paquete de café",
+        "x1 kg de azúcar",
+        "x1 lb de jamón",
+        "x1 bolsa de pan"
+      ],
+      "precio": 24.55,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "imagenes": ["combos/combo_express_3.jpg"],
+      "disponibilidad": true,
+      "ahorro": 0,
+      "descripcion": "El combo express ideal para comenzar el día con energía. Incluye una bolsa de 1 kg de leche en polvo, un paquete de café aromático, un kilogramo de azúcar, una libra de jamón y una bolsa de pan fresco. Todo lo que necesitas para un desayuno completo y delicioso o una merienda rápida."
+    },
+    {
+      "nombre": "Combo express 4",
+      "categoria": "Combos",
+      "tipo": "pack",
+      "productos": [
+        "x5 lb de cerdo",
+        "x3 de pollo",
+        "x1 kg de arroz",
+        "x1 lb frijol",
+        "x1 aceite",
+        "x1 Lata Puré",
+        "x2 goyas",
+        "x2 pastillitas de pollo",
+        "x1 botella de vinagre"
+      ],
+      "precio": 36.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "imagenes": ["combos/combo_express_4.jpg"],
+      "disponibilidad": true,
+      "ahorro": 0,
+      "descripcion": "Un combo express diseñado para facilitar tus comidas diarias. Incluye 5 libras de cerdo y 3 libras de pollo para tus platos principales. Acompaña con 1 kg de arroz, 1 libra de frijol y una lata de puré. Para cocinar, un pomo de aceite y una botella de vinagre. Además, cuenta con condimentos como 2 goyas y 2 pastillitas de pollo para darle sabor a tus recetas."
+    },
+    {
+      "nombre": "Combo express 5",
+      "categoria": "Combos",
+      "tipo": "pack",
+      "productos": [
+        "x4 lb cerdo",
+        "x2 lb de ovejo",
+        "x2 lb de pollo",
+        "x1 fil de huevo",
+        "x1 Pomo aceite",
+        "x1 lb Picadillo",
+        "x1 leche en polvo",
+        "x1 kg de azucar"
+      ],
+      "precio": 49.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "imagenes": ["combos/combo_express_5.jpg"],
+      "disponibilidad": true,
+      "ahorro": 0,
+      "descripcion": "Este combo express te ofrece una variedad de carnes esenciales: 4 libras de cerdo, 2 libras de ovejo y 2 libras de pollo. También incluye un filete de huevo y 1 libra de picadillo. Para tu despensa, encontrarás un pomo de aceite, una leche en polvo y un kilogramo de azúcar. Una selección práctica para las necesidades básicas de tu hogar."
+    },
+    {
+      "nombre": "Combo express 6",
+      "categoria": "Combos",
+      "tipo": "pack",
+      "productos": [
+        "x10 lb cerdo",
+        "x3 de ovejo",
+        "x1 lb de jamón",
+        "x2 kg de arroz",
+        "x1 lb frijol",
+        "x1 Spaghetti",
+        "x1 aceite",
+        "x1 lata Puré",
+        "x1 detergente (500 g)"
+      ],
+      "precio": 59.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "imagenes": ["combos/combo_express_6.jpg"],
+      "disponibilidad": true,
+      "ahorro": 0,
+      "descripcion": "Un combo express diseñado para cubrir tus necesidades de cocina esenciales. Incluye 10 libras de cerdo, 3 libras de ovejo y 1 libra de jamón. Para acompañar, 2 kg de arroz, 1 libra de frijol, y un paquete de espagueti. También cuenta con un pomo de aceite y una lata de puré para tus preparaciones. Además, un detergente de 500g para mantener tu hogar impecable."
+    },
+    {
+      "nombre": "Combo express 7",
+      "categoria": "Combos",
+      "tipo": "pack",
+      "productos": [
+        "x7 lb de cerdo",
+        "x3 lb de ovejo",
+        "x2 lb de pollo",
+        "x1 Paquete de leche polvo",
+        "x1 Fil de huevo",
+        "x2 cafés",
+        "x1 aceite (900 ml)",
+        "x2 kg de arroz",
+        "x2 goyas",
+        "x2 Jabones"
+      ],
+      "precio": 74.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "imagenes": ["combos/combo_express_7.jpg"],
+      "disponibilidad": true,
+      "ahorro": 0,
+      "descripcion": "Este combo express es una excelente opción para abastecer tu despensa con productos básicos y versátiles. Incluye 7 libras de cerdo, 3 libras de ovejo y 2 libras de pollo. Para el desayuno o la merienda, cuenta con un paquete de leche en polvo, un filete de huevo y dos cafés. Además, incluye un pomo de aceite de 900 ml, 2 kg de arroz, dos condimentos Goya y dos jabones, cubriendo tanto tus necesidades culinarias como de higiene."
+    }
+  ]
+}
