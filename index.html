@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Meta tags y título permanecen igual -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- Meta para Control de Cache -->
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0">
     <meta http-equiv="pragma" content="no-cache">
-    <!-- Meta Palabras Clave -->
     <meta name="keywords" content="Montaque, Online Shop, Las Tunas, Cuba, Productos, Calidad, Conectar, Familias">
-    <!-- Meta Autor -->
     <meta name="author" content="Montaque Shops">
-      <!-- Favicon -->
     <link rel="icon" href="Images/logo_2.png" type="image/x-icon">
     <title>Montaque - Tienda</title>
     <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="Css/pack-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <base href="./">
 </head>
@@ -103,43 +101,46 @@
         </nav>
     </header>
 
-    <!-- Carrusel de imágenes -->
-    <div class="hero-carousel">
+    <!-- Carrusel de imágenes (solo visible en página principal) -->
+    <div class="hero-carousel" id="main-carousel">
         <div class="carousel-track-container">
             <div class="carousel-track">
-                <div class="carousel-slide active">
+                <!-- Slide 1 -->
+                <div class="carousel-slide active" data-target="oferta" data-filter="oferta">
                     <img src="Images/carousel-1.jpg" alt="Oferta 1" class="carousel-image">
                     <div class="carousel-caption">
                         <h3>Gran Liquidación de Verano</h3>
                         <p>Hasta 50% de descuento en seleccionados</p>
-                        <button class="carousel-btn">Comprar Ahora</button>
+                        <button class="carousel-btn" data-action="filter" data-filter="oferta">Comprar Ahora</button>
                     </div>
                     <div class="carousel-gradient"></div>
                 </div>
-                <div class="carousel-slide">
+                <!-- Slide 2 -->
+                <div class="carousel-slide" data-target="nuevos" data-filter="nuevo">
                     <img src="Images/carousel-2.jpg" alt="Oferta 2" class="carousel-image">
                     <div class="carousel-caption">
                         <h3>Nuevos Productos</h3>
                         <p>Descubre nuestras últimas novedades</p>
-                        <button class="carousel-btn">Explorar</button>
+                        <button class="carousel-btn" data-action="filter" data-filter="nuevo">Explorar</button>
                     </div>
                     <div class="carousel-gradient"></div>
                 </div>
-                <div class="carousel-slide">
+                <!-- Slide 3 -->
+                <div class="carousel-slide" data-target="mas-vendidos" data-filter="mas_vendido">
                     <img src="Images/carousel-3.jpg" alt="Oferta 3" class="carousel-image">
                     <div class="carousel-caption">
-                        <h3>Envío Gratis</h3>
-                        <p>En compras mayores a $100</p>
-                        <button class="carousel-btn">Ver Ofertas</button>
+                        <h3>Los Más Vendidos</h3>
+                        <p>Lo que nuestros clientes prefieren</p>
+                        <button class="carousel-btn" data-action="filter" data-filter="mas_vendido">Ver Productos</button>
                     </div>
                     <div class="carousel-gradient"></div>
                 </div>
             </div>
         </div>
-        <button class="carousel-control prev" onclick="moveSlide(-1)" aria-label="Anterior">
+        <button class="carousel-control prev" onclick="moveSlide(1)" aria-label="Anterior">
             <i class="fas fa-chevron-left"></i>
         </button>
-        <button class="carousel-control next" onclick="moveSlide(1)" aria-label="Siguiente">
+        <button class="carousel-control next" onclick="moveSlide(-1)" aria-label="Siguiente">
             <i class="fas fa-chevron-right"></i>
         </button>
         <div class="carousel-dots">
@@ -150,8 +151,21 @@
     </div>
 
     <main id="main-content">
+        <!-- El panel de packs se generará dinámicamente -->
         <div class="products-grid" id="products-container"></div>
+        
         <div class="product-detail" id="product-detail" style="display: none;"></div>
+        <!-- Panel de busqueda no encontrada -->
+        <div id="no-results-message" class="no-results-container" style="display: none;">
+            <div class="no-results-content">
+                <i class="fas fa-search no-results-icon"></i>
+                <h3 class="no-results-title">No encontramos resultados</h3>
+                <p class="no-results-message">No hay productos que coincidan con "<span class="no-results-term">lo</span>"</p>
+                <button class="clear-search-btn" onclick="clearSearch()">
+                    <i class="fas fa-times"></i> Limpiar búsqueda
+                </button>
+            </div>
+        </div>
     </main>
 
     <div class="cart-sidebar" id="cart">
@@ -249,7 +263,7 @@
 
     <footer class="footer">
         <div class="footer-container">
-            <p class="footer-text">V1.3.1  © 2025 Montaque y afiliados H.A - Todos los derechos reservados</p>
+            <p class="footer-text">V1.7.5  © 2025 Montaque y afiliados H.A - Todos los derechos reservados</p>
         </div>
     </footer>
 
