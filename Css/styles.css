@@ -2271,24 +2271,6 @@ body.sidebar-open {
     
 }
 
-@media (max-width: 400px) {
-    .products-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    .product-image-container {
-        height: 140px;
-    }
-    
-    .product-info h3 {
-        font-size: 0.8rem;
-    }
-    
-    .cart-sidebar {
-        max-width: 100%;
-    }
-}
-
 /* Animaciones mejoradas */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
