@@ -696,9 +696,26 @@ function renderProducts(productsToRender = products) {
                 </div>
             ` : '';
 
+            // Badge agotado
+            const agotadoBadge = !displayProduct.disponibilidad
+                ? '<span class="badge agotado"><i class="fas fa-times-circle"></i> AGOTADO</span>'
+                : '';
+
+            // Botón añadir al carrito deshabilitado si no disponible
+            const addToCartBtn = displayProduct.disponibilidad
+                ? `<button class="add-to-cart" onclick="addToCart('${displayProduct.nombre}', false, event)">
+                        <i class="fas fa-cart-plus"></i>
+                        <span>Añadir al carrito</span>
+                   </button>`
+                : `<button class="add-to-cart" disabled style="opacity:0.6;cursor:not-allowed;">
+                        <i class="fas fa-ban"></i>
+                        <span>No disponible</span>
+                   </button>`;
+
             productEl.innerHTML = `
                 <div class="product-image-container">
                     <div class="product-badges">
+                        ${agotadoBadge}
                         ${displayProduct.nuevo ? '<span class="badge nuevo"><i class="fas fa-star"></i> NUEVO</span>' : ''}
                         ${displayProduct.oferta ? '<span class="badge oferta"><i class="fas fa-tag"></i> OFERTA</span>' : ''}
                         ${displayProduct.mas_vendido ? '<span class="badge mas-vendido"><i class="fas fa-trophy"></i> TOP</span>' : ''}
@@ -726,19 +743,15 @@ function renderProducts(productsToRender = products) {
                     
                     <div class="quantity-section">
                         <div class="quantity-controls">
-                            <button class="quantity-btn" onclick="adjustQuantity(this, -1, '${cleanName}', event)">
+                            <button class="quantity-btn" onclick="adjustQuantity(this, -1, '${cleanName}', event)" ${!displayProduct.disponibilidad ? 'disabled style="opacity:0.6;cursor:not-allowed;"' : ''}>
                                 <i class="fas fa-minus"></i>
                             </button>
                             <span class="product-quantity" id="quantity-${cleanName}">1</span>
-                            <button class="quantity-btn" onclick="adjustQuantity(this, 1, '${cleanName}', event)">
+                            <button class="quantity-btn" onclick="adjustQuantity(this, 1, '${cleanName}', event)" ${!displayProduct.disponibilidad ? 'disabled style="opacity:0.6;cursor:not-allowed;"' : ''}>
                                 <i class="fas fa-plus"></i>
                             </button>
                         </div>
-                        
-                        <button class="add-to-cart" onclick="addToCart('${displayProduct.nombre}', false, event)">
-                            <i class="fas fa-cart-plus"></i>
-                            <span>Añadir al carrito</span>
-                        </button>
+                        ${addToCartBtn}
                     </div>
                 </div>
             `;
@@ -767,7 +780,8 @@ function renderTopProducts() {
     const existingPanel = document.getElementById('top-products-section');
     if (existingPanel) existingPanel.remove();
 
-    const topProducts = products.filter(product => product.mas_vendido && !product.isPack);
+    // Solo productos disponibles
+    const topProducts = products.filter(product => product.mas_vendido && !product.isPack && product.disponibilidad);
     if (topProducts.length === 0) return; // No renderizar nada si no hay productos top
 
     const topProductsSection = document.createElement('div');
@@ -801,11 +815,16 @@ function renderTopProducts() {
             ? (displayProduct.precio * (1 - displayProduct.descuento/100)).toFixed(2)
             : displayProduct.precio.toFixed(2);
 
+        // Badge agotado (aunque no debería salir aquí, por si acaso)
+        const agotadoBadge = !displayProduct.disponibilidad
+            ? '<span class="top-product-badge agotado"><i class="fas fa-times-circle"></i> AGOTADO</span>'
+            : '<span class="top-product-badge">TOP</span>';
+
         const productEl = document.createElement('div');
         productEl.className = 'top-product-card';
         productEl.innerHTML = `
             <div class="top-product-image-container">
-                <span class="top-product-badge">TOP</span>
+                ${agotadoBadge}
                 <img src="Images/products/${displayProduct.imagenes[0]}" 
                     class="top-product-image" 
                     alt="${displayProduct.cleanName || displayProduct.nombre}">
@@ -973,6 +992,7 @@ function showProductDetail(productName) {
 
     // Badges
     const badges = [];
+    if (!product.disponibilidad) badges.push('<span class="detail-badge agotado"><i class="fas fa-times-circle"></i> Agotado</span>');
     if (product.nuevo) badges.push('<span class="detail-badge nuevo"><i class="fas fa-star"></i> Nuevo</span>');
     if (product.oferta) badges.push(`<span class="detail-badge oferta"><i class="fas fa-tag"></i> -${product.descuento}%</span>`);
     if (product.mas_vendido) badges.push('<span class="detail-badge mas-vendido"><i class="fas fa-trophy"></i> Más Vendido</span>');
@@ -1020,7 +1040,7 @@ function showProductDetail(productName) {
                                         <span class="current-price">$ ${finalPriceSuggested}</span>
                                     `}
                                 </div>
-                                <button class="add-to-cart-mini" onclick="addToCart('${suggested.nombre}', false, event)">
+                                <button class="add-to-cart-mini" onclick="addToCart('${suggested.nombre}', false, event)" ${!suggested.disponibilidad ? 'disabled style="opacity:0.6;cursor:not-allowed;"' : ''}>
                                     <i class="fas fa-cart-plus"></i> Añadir
                                 </button>
                             </div>
@@ -1030,6 +1050,17 @@ function showProductDetail(productName) {
             </div>
         </div>
     ` : '';
+
+    // Botón añadir al carrito deshabilitado si no disponible
+    const addToCartBtn = product.disponibilidad
+        ? `<button class="add-to-cart-btn" onclick="addToCart('${product.nombre}', true, event)">
+                <i class="fas fa-cart-plus"></i>
+                Añadir al carrito
+           </button>`
+        : `<button class="add-to-cart-btn" disabled style="opacity:0.6;cursor:not-allowed;">
+                <i class="fas fa-ban"></i>
+                No disponible
+           </button>`;
 
     detailContainer.innerHTML = `
         <div class="detail-container">
@@ -1063,16 +1094,13 @@ function showProductDetail(productName) {
                 <div class="quantity-section">
                     <label class="quantity-label">Cantidad:</label>
                     <div class="quantity-controls">
-                        <button class="quantity-btn" onclick="adjustDetailQuantity(-1, event)">-</button>
+                        <button class="quantity-btn" onclick="adjustDetailQuantity(-1, event)" ${!product.disponibilidad ? 'disabled style="opacity:0.6;cursor:not-allowed;"' : ''}>-</button>
                         <span class="quantity-display" id="detail-quantity">1</span>
-                        <button class="quantity-btn" onclick="adjustDetailQuantity(1, event)">+</button>
+                        <button class="quantity-btn" onclick="adjustDetailQuantity(1, event)" ${!product.disponibilidad ? 'disabled style="opacity:0.6;cursor:not-allowed;"' : ''}>+</button>
                     </div>
                 </div>
 
-                <button class="add-to-cart-btn" onclick="addToCart('${product.nombre}', true, event)">
-                    <i class="fas fa-cart-plus"></i>
-                    Añadir al carrito
-                </button>
+                ${addToCartBtn}
                 
                 ${product.descripcion ? `
                     <div class="product-description">
@@ -1105,7 +1133,6 @@ function showProductDetail(productName) {
     productsContainer.style.display = 'none';
     detailContainer.style.display = 'block';
     currentProduct = product;
-
 
     toggleCarousel(false);
 }
