@@ -1063,6 +1063,11 @@ body.sidebar-open {
     background: var(--verde-mas-vendido);
 }
 
+.detail-badge.agotado {
+    background: var(--gris-claro);
+    color: var(--negro);
+}
+
 .detail-container {
     display: grid; /* Usar grid para la disposición */
     grid-template-areas: 
@@ -1533,7 +1538,7 @@ body.sidebar-open {
 }
 
 .cart-total {
-    padding: 1.25rem 1.75rem; /* Relleno */
+    padding: 1rem 1rem 5rem 1rem;
     border-top: 1px solid var(--gris-claro); /* Línea separadora */
     background-color: var(--gris-claro); /* Fondo gris claro */
 }
@@ -2734,8 +2739,8 @@ body.sidebar-open {
 }
 
 .variant-thumb {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%; /* Miniaturas circulares */
     overflow: hidden; /* Para que la imagen no se salga */
     border: 2px solid #ddd; /* Borde gris claro */
