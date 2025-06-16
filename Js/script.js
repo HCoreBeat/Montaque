@@ -325,7 +325,8 @@ function getCategoryIcon(category) {
         'bebidas': 'wine-glass-alt',
         'postres': 'cookie-bite',
         'frutas': 'apple-alt',
-        'verduras': 'carrot',
+        'agro': 'carrot',
+        'hogar': 'home',
         'carnes': 'drumstick-bite',
         'pescado': 'fish',
         'panadería': 'bread-slice',
@@ -1638,7 +1639,7 @@ document.addEventListener('click', (e) => {
  * Abre WhatsApp con mensaje predeterminado
  */
 function openWhatsApp() {
-    const phoneNumber = '+5353411131';
+    const phoneNumber = '+12297163120';
     const message = encodeURIComponent('Estoy interesado en los productos que vi en su tienda. ¿Podrían ayudarme?');
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     
