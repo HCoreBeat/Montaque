@@ -15,6 +15,188 @@
       "disponibilidad": true
     },
     {
+      "nombre": "Azúcar 1kg",
+      "categoria": "Despensa",
+      "precio": 2.10,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "azucar_1kg.jpg"
+      ],
+      "descripcion": "Paquete de 1kg de Azúcar Cristal Globo. Ideal para endulzar tus bebidas y preparar tus recetas favoritas. De tipo cristal blanco, este azúcar de industria brasileña es un básico esencial en tu cocina.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Plátano Macho x Unidad",
+      "categoria": "Agro",
+      "precio": 0.15,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "platano_macho.jpg"
+      ],
+      "descripcion": "Plátano macho verde fresco, ideal para cocinar. Perfecto para preparar tostones, patacones, plátanos maduros fritos o al horno. Un ingrediente versátil en la cocina latinoamericana.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Boniato x Lb",
+      "categoria": "Agro",
+      "precio": 0.40,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "boniato.jpg"
+      ],
+      "descripcion": "Boniato fresco por libra. Tubérculo de piel rojiza y pulpa clara, ligeramente dulce. Ideal para asar, freír, cocer o preparar purés. Una opción nutritiva y versátil para tus comidas.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Tomate x Lb",
+      "categoria": "Agro",
+      "precio": 1.70,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "tomate.jpg"
+      ],
+      "descripcion": "Tomate fresco por libra. Jugoso y de color rojo intenso, perfecto para ensaladas, salsas, guisos o cualquier receta que requiera un toque de frescura. Un ingrediente esencial en la cocina diaria.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Jabón Doxa 100g",
+      "categoria": "Hogar",
+      "precio": 0.80,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Jabon_100g.jpg"
+      ],
+      "descripcion": "Jabón Doxa con carbón activado para una limpieza profunda. Edición limitada, ideal para purificar y limpiar la piel. Presentación de 100g, perfecto para el uso diario en tu rutina de higiene personal.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Jabón Nara 125g",
+      "categoria": "Hogar",
+      "precio": 0.85,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Jabon_125g.jpg"
+      ],
+      "descripcion": "Jabón de belleza premium Nara Classic de 125g. Formulado con extracto floral natural y aceite vegetal, enriquecido con un exclusivo perfume para durar todo el día. Nutre e hidrata tu piel para una sensación de suavidad.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Detergente STB Multiusos 1kg",
+      "categoria": "Hogar",
+      "precio": 3.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Detergente_1kg.jpg"
+      ],
+      "descripcion": "Detergente en polvo multiusos STB de 1kg con fragancia a rosas. Diseñado para dejar tu ropa más limpia y con colores más vivos. Ideal para el lavado de prendas en casa, proporcionando un agradable aroma.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Sazón Goya",
+      "categoria": "Despensa",
+      "precio": 0.30,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Sazon_Goya.jpg"
+      ],
+      "descripcion": "Sazón Goya, un condimento único con culantro y achiote. Especial para arroces, salsas, guisos, sopas y más. Ideal para añadir color y un sabor auténtico a tus comidas.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Sazón Mixto Nezka 250g",
+      "categoria": "Despensa",
+      "precio": 4.80,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Sazon_Mixto_Nezka.jpg"
+      ],
+      "descripcion": "Sazón mixto Nezka en presentación de 250g (8.8 oz). Una mezcla de condimentos y especias ideal para realzar el sabor de tus comidas. Perfecto para carnes, aves, pescados, arroces y vegetales, aportando un toque delicioso a tus platos.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Ketchup Dino Food 560g",
+      "categoria": "Despensa",
+      "precio": 3.07,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "ketchup_dino_food.jpg"
+      ],
+      "descripcion": "Ketchup Dino Food en presentación de 560g. La salsa de tomate dulce y tangy perfecta para acompañar hamburguesas, papas fritas, hot dogs y una variedad de tus comidas favoritas. Botella antigoteo para mayor comodidad.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Pasta de Tomate Risol 400g",
+      "categoria": "Despensa",
+      "precio": 1.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "pasta_de_tomate.jpg"
+      ],
+      "descripcion": "Pasta de tomate Risol, peso neto 400g. Elaborada con 100% tomates naturales, es ideal para dar sabor y consistencia a tus salsas, guisos y recetas favoritas. Un básico imprescindible para tu despensa.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Leche Condensada 390g",
+      "categoria": "Lácteos",
+      "precio": 2.40,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "leche_condensada_390g.jpg"
+      ],
+      "descripcion": "Leche condensada azucarada La Granjera en presentación de 390g (13.8 oz). Ideal para la preparación de postres, dulces y bebidas. Su consistencia cremosa y dulce sabor la hacen perfecta para tus recetas favoritas. Contiene 130 calorías por porción.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Menta Plus Mentol",
+      "categoria": "Snacks",
+      "precio": 0.45,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "menthoplus.jpg"
+      ],
+      "descripcion": "Chicle o caramelo refrescante Freegells sabor menta mentol. Ideal para un aliento fresco y un alivio instantáneo. Paquete individual, perfecto para llevar contigo.",
+      "disponibilidad": true
+    },
+    {
       "nombre": "Arroz brasileño",
       "categoria": "Despensa",
       "precio": 3.50,
@@ -155,6 +337,202 @@
       "disponibilidad": true
     },
     {
+      "nombre": "Refresco (Cola) 330 ml",
+      "categoria": "Bebidas",
+      "precio": 0.80,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Refresco_cola_330_ml.jpg"
+      ],
+      "descripcion": "Refresco Brio Cola en lata de 330 ml. Una bebida refrescante con sabor a cola, ideal para disfrutar en cualquier momento del día. Calidad de refresco que te brindará un gusto inigualable.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Refresco (Limón) 330 ml",
+      "categoria": "Bebidas",
+      "precio": 0.80,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Refresco_limon_330_ml.jpg"
+      ],
+      "descripcion": "Refresco Ritz sabor Lima Limón, sin cafeína, en lata de 330 ml. Disfruta de un refrescante y burbujeante sabor a limón natural. Ideal para acompañar tus comidas o para refrescarte en cualquier momento del día.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Refresco (Naranja) 330 ml",
+      "categoria": "Bebidas",
+      "precio": 0.80,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Refresco_naranja_330_ml.jpg"
+      ],
+      "descripcion": "Refresco Max Booms Boom sabor naranja en lata de 330 ml (11.2 fl.oz.). Una bebida refrescante y burbujeante de calidad con un intenso sabor a naranja. Ideal para disfrutar en cualquier momento y refrescar tu día.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Caja de Refresco (Cola)",
+      "categoria": "Bebidas",
+      "precio": 17.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Caja_Refresco_cola.jpg"
+      ],
+      "descripcion": "Caja de 24 latas de Refresco Brio Cola, cada una de 355 ml. Disfruta del refrescante sabor a cola en formato de conveniencia para compartir o abastecer tu hogar. Ideal para fiestas, reuniones o para tener siempre a mano tu bebida favorita.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Caja de Refresco (Limón)",
+      "categoria": "Bebidas",
+      "precio": 17.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Caja_Refresco_limon.jpg"
+      ],
+      "descripcion": "Caja de Refresco Ritz sabor Lima Limón, sin cafeína. Disfruta de un refrescante sabor natural de limón en este pack de latas. Ideal para compartir en cualquier ocasión o para tener siempre a mano tu bebida favorita.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Caja de Refresco (Naranja)",
+      "categoria": "Bebidas",
+      "precio": 17.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Caja_Refresco_naranja.jpg"
+      ],
+      "descripcion": "Caja de Refresco Max Booms Boom con sabor a naranja, una explosión de sabor burbujeante. Disfruta de esta soda refrescante de calidad, perfecta para cualquier momento. Ideal para compartir o abastecer tu despensa.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Jugo Lovely (Mango) 200ml",
+      "categoria": "Bebidas",
+      "precio": 0.70,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Jugo_lovely_mango_200ml.jpg"
+      ],
+      "descripcion": "Jugo Lovely sabor mango en formato individual de 200 ml. Una bebida refrescante y deliciosa con el auténtico sabor tropical del mango. Ideal para llevar y disfrutar en cualquier momento.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Jugo Lovely (Cóctel) 200ml",
+      "categoria": "Bebidas",
+      "precio": 0.70,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Jugo_lovely_coctel_200ml.jpg"
+      ],
+      "descripcion": "Jugo Lovely sabor cóctel de frutas en formato individual de 200 ml. Una bebida refrescante y deliciosa con una mezcla vibrante de sabores frutales. Ideal para llevar y disfrutar en cualquier momento del día.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Pack x12 Jugo Lovely (Mango)",
+      "categoria": "Bebidas",
+      "precio": 8.39,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Pack_x12_Jugo_lovely_mango.jpg"
+      ],
+      "descripcion": "Pack de 12 unidades de Jugo Lovely sabor mango, ideal para tener siempre a mano. Cada jugo ofrece un refrescante y delicioso sabor tropical. Perfecto para la lonchera de los niños o para disfrutar en cualquier momento del día.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Pack x12 Jugo Lovely (Cóctel)",
+      "categoria": "Bebidas",
+      "precio": 8.39,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Pack_x12_Jugo_lovely_coctel.jpg"
+      ],
+      "descripcion": "Pack de 12 unidades de Jugo Lovely sabor cóctel de frutas. Cada jugo individual ofrece una mezcla refrescante y deliciosa de sabores frutales. Ideal para la merienda, para llevar o para tener en casa y disfrutar en cualquier momento.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Caja de Jugo Lovely (Mango)",
+      "categoria": "Bebidas",
+      "precio": 17.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Caja_de_Jugo_lovely_mango.jpg"
+      ],
+      "descripcion": "Caja de Jugo Lovely sabor mango, ideal para surtir tu despensa o para eventos. Cada jugo individual ofrece un refrescante y delicioso sabor tropical. Perfecto para la lonchera de los niños o para disfrutar en cualquier momento del día.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Caja de Jugo Lovely (Cóctel)",
+      "categoria": "Bebidas",
+      "precio": 17.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Caja_de_Jugo_lovely_coctel.jpg"
+      ],
+      "descripcion": "Caja de Jugo Lovely sabor cóctel de frutas. Cada jugo individual ofrece una mezcla vibrante y refrescante de sabores frutales, ideal para disfrutar en cualquier momento. Perfecto para surtir tu hogar, eventos o para tener siempre a mano una bebida deliciosa.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Kermato Tomate 340ml",
+      "categoria": "Bebidas",
+      "precio": 2.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Kermato_tomate_340ml.jpg"
+      ],
+      "descripcion": "Bebida Kermato con 20% de tomate y sabor a almeja, en lata de 340ml. Con la advertencia de 'Exceso Sodio' de la Secretaría de Salud. Ideal para preparar cócteles o disfrutarla sola como una bebida refrescante y con un toque único.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Picadillo Especial La Favorita 400g",
+      "categoria": "Carnes",
+      "precio": 1.60,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Picadillo_especial_400g.jpg"
+      ],
+      "descripcion": "Picadillo Especial La Favorita de 400g, libre de soya. Listo para cocinar y perfecto para preparar deliciosas comidas de forma rápida y sencilla. Un ingrediente versátil para tus guisos, salsas y rellenos.",
+      "disponibilidad": true
+    },
+    {
       "nombre": "Jamón",
       "categoria": "Carnes",
       "precio": 3.80,
@@ -169,6 +547,34 @@
       "disponibilidad": true
     },
     {
+      "nombre": "Chupa Chupa Big Bom x Unidad",
+      "categoria": "Snacks",
+      "precio": 0.20,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Chupa_chupa_por_unidad.jpg"
+      ],
+      "descripcion": "Chupa Chupa Big Bom surtido de sabores. Caramelo duro con palo, ideal para un dulce y divertido momento. Perfecto para los más pequeños o para un antojo rápido.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Caramelos de Leche x Unidad",
+      "categoria": "Snacks",
+      "precio": 0.15,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Caramelos_de_leche.jpg"
+      ],
+      "descripcion": "Caramelos blandos de leche De Squisit. Deliciosos y cremosos, perfectos para disfrutar en cualquier momento. Vienen en paquetes de 50 unidades, ideal para compartir o para un dulce antojo individual.",
+      "disponibilidad": true
+    },
+    {
       "nombre": "Kake mediano",
       "categoria": "Postres",
       "precio": 28.90,
@@ -180,6 +586,34 @@
         "kake_mediano.jpg"
       ],
       "descripcion": "Impresionante kake mediano, cubierto de merengue y con un delicioso relleno de leche condensada. Decorado con elegantes detalles en rosa y blanco. Perfecto para celebraciones de 45 a 50 personas, un verdadero deleite visual y gustativo. Ideal para cumpleaños y eventos especiales.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Galletas de Soda con Mantequilla Doricas",
+      "categoria": "Snacks",
+      "precio": 4.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "Galletas_de_soda_con_mantequilla_doricas .jpg"
+      ],
+      "descripcion": "Galletas Semidulces/Mantequilla Doricas, en paquete con 5 tacos. Contenido neto: 325 g / 19.51 oz. Perfectas para acompañar tus comidas, quesos o para disfrutar como un snack ligero en cualquier momento del día.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Galletas Marie",
+      "categoria": "Snacks",
+      "precio": 1.20,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "galletas_marie.jpg"
+      ],
+      "descripcion": "Galletas Marie, perfectas para disfrutar solas o acompañadas. Ideales para el desayuno, la merienda o como base para postres. Suave sabor y textura crujiente.",
       "disponibilidad": true
     },
     {
@@ -211,15 +645,15 @@
       "disponibilidad": true
     },
     {
-      "nombre": "Leche en polvo entera",
+      "nombre": "Leche en polvo entera Capri (1kg)",
       "categoria": "Lácteos",
-      "precio": 11.40,
+      "precio": 10.99,
       "descuento": 0,
       "mas_vendido": true,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "leche_en_polvo_entera.jpg"
+        "leche_en_polvo_entera_capri.jpg"
       ],
       "descripcion": "Leche en polvo entera Macro Food al 26% MG, ideal para preparar bebidas, postres y recetas. Rinde hasta 8.5 litros por cada kilogramo. Una opción práctica y duradera para tu despensa. Contenido: 1 kg.",
       "disponibilidad": true
@@ -253,7 +687,7 @@
       "disponibilidad": true
     },
     {
-      "nombre": "Malta bucanero",
+      "nombre": "Caja de Malta bucanero",
       "categoria": "Bebidas",
       "precio": 23.90,
       "descuento": 0,
@@ -264,6 +698,20 @@
         "malta_bucanero.jpg"
       ],
       "descripcion": "Pack de 24 unidades de Malta Bucanero, una bebida sin alcohol refrescante y nutritiva. Ideal para cualquier momento del día, con un sabor distintivo y energizante. Perfecto para compartir.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Malta Bucanero",
+      "categoria": "Bebidas",
+      "precio": 0.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "malta_bucanero_sola.jpg"
+      ],
+      "descripcion": "Malta Bucanero, una bebida refrescante sin alcohol. Perfecta para disfrutar en cualquier momento del día, con su sabor dulce y distintivo. Contenido: 355 ml.",
       "disponibilidad": true
     },
     {
