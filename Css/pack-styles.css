@@ -301,11 +301,107 @@
     border-top: 1px solid rgba(212, 175, 55, 0.2);
 }
 
-.pack-quantity-section {
+.pack-actions {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
+}
+
+.pack-actions button {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.pack-actions .add-pack-to-cart {
+    background-color: var(--dorado-pastel);
+    padding: 0.8rem;
+    color: var(--negro);
+}
+
+.pack-actions .buy-pack-now {
+    background-color: var(--verde-mas-vendido);
+    font-size: 0.95rem;
+    color: var(--blanco);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 12px rgba(40, 167, 69, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.pack-actions .buy-pack-now::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.pack-actions .buy-pack-now:hover::before {
+    left: 100%;
+}
+
+.pack-actions .buy-pack-now i {
+    animation: boltPulse 1.5s infinite;
+    font-size: 1.1rem;
+    color: #FFF;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+@keyframes boltPulse {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2) rotate(8deg);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.pack-actions button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.pack-actions .buy-pack-now:hover {
+    background-color: #23963f;
+    box-shadow: 0 4px 20px rgba(40, 167, 69, 0.4);
+}
+
+.pack-actions button:active {
+    transform: translateY(1px);
+}
+
+.pack-actions button i {
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
 }
 
 .pack-quantity-controls {
