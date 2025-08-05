@@ -118,7 +118,13 @@ function getOSInfo() {
     return os;
 }
 
-function showPaymentSection() {
+// Variable global para la orden temporal
+let temporaryOrder = null;
+
+function showPaymentSection(tempOrder = null) {
+    // Si se proporciona una orden temporal, guárdala
+    temporaryOrder = tempOrder;
+
     // Asegúrate de que estas funciones (closeCart, closeSidebar) existan en tu código
     if (typeof closeCart === 'function') closeCart();
     if (typeof closeSidebar === 'function') closeSidebar();
@@ -155,7 +161,8 @@ function updateOrderSummary() {
         throw new Error('Elementos del resumen no encontrados');
     }
 
-    const cart = getValidatedCart();
+    // Usar la orden temporal si existe, si no, usar el carrito normal
+    const cart = temporaryOrder ? [temporaryOrder] : getValidatedCart();
     let total = 0;
 
     orderSummary.innerHTML = cart.map(item => {
@@ -219,10 +226,13 @@ async function processPayment(e) {
     const loadingNotification = showPaymentNotification('Procesando tu pedido...', 'loading');
 
     try {
-        const cart = getValidatedCart();
+        const cart = temporaryOrder ? [temporaryOrder] : getValidatedCart();
         if (cart.length === 0) {
             throw new Error('Tu carrito está vacío');
         }
+
+        // Limpiamos la orden temporal después de usarla
+        temporaryOrder = null;
 
         const formData = validateForm(); // Info del cliente del formulario
         const userData = await gatherUserData(); // Info de IP y país
@@ -234,7 +244,7 @@ async function processPayment(e) {
             pais: userData.country_name,
             origen: window.location.href,
             afiliado: affiliateInfo?.nombre || "Ninguno", // Nombre del afiliado (string)
-            nombre_comprador: formData['full-name'],
+            nombre_comprador: `${formData['full-name']} (Nombre de persona a entregar: ${formData['recipient-name']})`,
             telefono_comprador: formData.phone || "N/A",
             correo_comprador: formData.email,
             direccion_envio: formData.address,
@@ -350,7 +360,7 @@ function getValidatedCart() {
 
 function validateForm() {
     const form = document.getElementById('payment-form');
-    const requiredFields = ['full-name', 'email', 'phone', 'address'];
+    const requiredFields = ['full-name', 'email', 'phone', 'address', 'recipient-name'];
     const formData = {};
 
     requiredFields.forEach(field => {
@@ -361,8 +371,31 @@ function validateForm() {
         formData[field] = value;
     });
 
+    // Guardar datos en localStorage
+    localStorage.setItem('userData', JSON.stringify({
+        'full-name': formData['full-name'],
+        'email': formData['email'],
+        'phone': formData['phone']
+    }));
+
     return formData;
 }
+
+function autofillForm() {
+    const savedData = JSON.parse(localStorage.getItem('userData'));
+    if (savedData) {
+        const form = document.getElementById('payment-form');
+        Object.keys(savedData).forEach(key => {
+            const input = form.querySelector(`[name="${key}"]`);
+            if (input) {
+                input.value = savedData[key];
+            }
+        });
+    }
+}
+
+// Llamar a autofillForm al cargar la página
+window.addEventListener('load', autofillForm);
 
 function prepareOrderItems(cart) {
     return cart.map(item => ({

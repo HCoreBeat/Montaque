@@ -93,11 +93,11 @@ async function loadProducts() {
         renderCategories();
         initPriceFilter();
 
-        // --- ORDEN DE RENDERIZADO CORREGIDO ---
-        renderTopProducts(); // 1. Renderizar Los Más Vendidos primero
-        renderPacksPanel();  // 2. Renderizar Packs Especiales después de Los Más Vendidos
-        renderProducts();    // 3. Renderizar la cuadrícula principal de productos
-        // --- FIN DEL ORDEN DE RENDERIZADO CORREGIDO ---
+        // --- NUEVO ORDEN DE RENDERIZADO ---
+        renderPacksPanel();   // 1. Renderizar Packs Especiales primero
+        renderTopProducts();  // 2. Renderizar Los Más Vendidos después de Packs
+        renderProducts();     // 3. Renderizar la cuadrícula principal de productos
+        // --- FIN DEL NUEVO ORDEN DE RENDERIZADO ---
         
         updateCartCount();
         updateCart();
@@ -188,15 +188,8 @@ function renderPacksPanel() {
         <div class="packs-container" id="packs-container"></div>
     `;
 
-    const topProductsSection = document.getElementById('top-products-section');
-    
-    // Insertar la sección de packs después de la sección de "top products" si existe,
-    // o al principio del mainContent si "top products" no existe.
-    if (topProductsSection && topProductsSection.parentNode === mainContent) {
-        mainContent.insertBefore(packsSection, topProductsSection.nextSibling);
-    } else {
-        mainContent.insertBefore(packsSection, mainContent.firstChild);
-    }
+    // Siempre insertar los packs al principio del mainContent
+    mainContent.insertBefore(packsSection, mainContent.firstChild);
 
     const packsContainer = document.getElementById('packs-container');
     if(!packsContainer) {
@@ -245,19 +238,14 @@ function renderPacksPanel() {
                     </ul>
                 </div>
                 <div class="pack-footer">
-                    <div class="pack-quantity-section">
-                        <div class="pack-quantity-controls">
-                            <button class="pack-quantity-btn" onclick="adjustPackQuantity(this, -1, '${pack.nombre.replace(/'/g, "\\'")}', event)">
-                                <i class="fas fa-minus"></i>
-                            </button>
-                            <span class="pack-quantity" id="pack-quantity-${pack.nombre.replace(/'/g, "\\'")}">1</span>
-                            <button class="pack-quantity-btn" onclick="adjustPackQuantity(this, 1, '${pack.nombre.replace(/'/g, "\\'")}', event)">
-                                <i class="fas fa-plus"></i>
-                            </button>
-                        </div>
+                    <div class="pack-actions">
                         <button class="add-pack-to-cart" onclick="addToCart('${pack.nombre.replace(/'/g, "\\'")}', false, event)">
                             <i class="fas fa-cart-plus"></i>
-                            <span>Añadir</span>
+                            <span>Añadir al carrito</span>
+                        </button>
+                        <button class="buy-pack-now" onclick="buyPackNow('${pack.nombre.replace(/'/g, "\\'")}', event)">
+                            <i class="fas fa-bolt"></i>
+                            <span>Comprar ahora</span>
                         </button>
                     </div>
                 </div>
@@ -268,6 +256,25 @@ function renderPacksPanel() {
 
     packsContainer.addEventListener('scroll', updatePacksScrollButtons);
     updatePacksScrollButtons(); // Llamar para estado inicial de botones
+}
+
+// Función para comprar pack directamente
+function buyPackNow(packName, event) {
+    event.stopPropagation();
+    const pack = products.find(p => p.nombre === packName);
+    if (!pack) {
+        console.error('Pack no encontrado:', packName);
+        return;
+    }
+
+    // Crear orden temporal
+    const tempOrder = {
+        product: pack,
+        quantity: 1
+    };
+
+    // Mostrar sección de pago con la orden temporal
+    showPaymentSection(tempOrder);
 }
 
 // Nueva función para ajustar cantidad en packs
@@ -798,8 +805,13 @@ function renderTopProducts() {
         <div class="top-products-container" id="top-products-container"></div>
     `;
 
-    // Insertar al principio del main-content
-    mainContent.insertBefore(topProductsSection, mainContent.firstChild);
+    // Insertar los top products después de los packs (si existen), si no, al principio
+    const packsSection = document.getElementById('packs-section');
+    if (packsSection && packsSection.parentNode === mainContent) {
+        mainContent.insertBefore(topProductsSection, packsSection.nextSibling);
+    } else {
+        mainContent.insertBefore(topProductsSection, mainContent.firstChild);
+    }
 
     const container = document.getElementById('top-products-container');
     if (!container) {
