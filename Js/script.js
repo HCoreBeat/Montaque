@@ -1075,10 +1075,26 @@ function showProductDetail(productName) {
                 No disponible
            </button>`;
 
+    // Save current product for sharing with full information
+    currentProduct = {
+        ...product,
+        imagen: `Images/products/${product.imagenes[0]}`,
+        top: product.mas_vendido,
+        nombre: product.cleanName || product.nombre,
+        descripcion: product.descripcion || '',
+        precio: product.precio,
+        descuento: product.descuento || 0,
+        nuevo: product.nuevo || false,
+        oferta: product.oferta || false
+    };
+    
     detailContainer.innerHTML = `
         <div class="detail-container">
             <div class="detail-gallery">
                 <div class="main-image-container">
+                    <button class="share-button" onclick="generateProductImage(currentProduct)">
+                        <i class="fas fa-share-alt"></i> Compartir
+                    </button>
                     <img src="Images/products/${product.imagenes[0]}" class="main-image" alt="${product.cleanName || product.nombre}" id="main-product-image">
                 </div>
             </div>

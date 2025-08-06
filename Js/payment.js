@@ -271,7 +271,12 @@ async function processPayment(e) {
             setTimeout(() => loadingNotification.remove(), 300);
         }
 
-        clearCart();
+        // Solo limpiamos el carrito si no es una compra directa de pack
+        const isDirectPackPurchase = Boolean(temporaryOrder);
+        if (!isDirectPackPurchase) {
+            clearCart();
+        }
+
         hidePaymentSection();
         showOrderConfirmationModal();
 
