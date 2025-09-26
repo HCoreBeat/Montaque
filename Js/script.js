@@ -1838,7 +1838,3 @@ window.addEventListener('hashchange', checkCarouselVisibility);
 
 // Inicialización
 document.addEventListener('DOMContentLoaded', loadProducts);
-
-
-
-,
