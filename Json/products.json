@@ -530,7 +530,7 @@
         "Picadillo_especial_400g.jpg"
       ],
       "descripcion": "Picadillo Especial La Favorita de 400g, libre de soya. Listo para cocinar y perfecto para preparar deliciosas comidas de forma rápida y sencilla. Un ingrediente versátil para tus guisos, salsas y rellenos.",
-      "disponibilidad": true
+      "disponibilidad": false
     },
     {
       "nombre": "Jamón",
@@ -1260,3 +1260,4 @@
     }
   ]
 }
+
