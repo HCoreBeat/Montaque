@@ -1,6 +1,20 @@
 {
   "products": [
     {
+      "nombre": "Carne de obejo",
+      "categoria": "Carnes",
+      "precio": 20.90,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "carne_de_obejo.jpg"
+      ],
+      "descripcion": "Tierna y sabrosa carne de obejo, ideal para guisos, asados lentos o barbacoas. Su sabor distintivo enriquecerá cualquier platillo. Un producto de calidad para tus mejores preparaciones. Peso: 10 lb (aproximadamente 4.54 kg).",
+      "disponibilidad": true
+    },
+    {
       "nombre": "Aceite de Soya",
       "categoria": "Despensa",
       "precio": 3.95,
@@ -222,20 +236,6 @@
         "cafe_bryderk.jpg"
       ],
       "descripcion": "Café Bryderk, café español de alta calidad con tueste natural 100% molido, 'El café para el gusto latino'. Disfruta de un aroma y sabor intensos en cada taza. Contenido: 250 g (8.81 oz). Precio original: 5.90 USD. Precio de oferta: 5.10 USD.",
-      "disponibilidad": true
-    },
-    {
-      "nombre": "Carne de obejo",
-      "categoria": "Carnes",
-      "precio": 20.90,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "carne_de_obejo.jpg"
-      ],
-      "descripcion": "Tierna y sabrosa carne de obejo, ideal para guisos, asados lentos o barbacoas. Su sabor distintivo enriquecerá cualquier platillo. Un producto de calidad para tus mejores preparaciones. Peso: 10 lb (aproximadamente 4.54 kg).",
       "disponibilidad": true
     },
     {
@@ -1260,4 +1260,5 @@
     }
   ]
 }
+
 
